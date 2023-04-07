@@ -3,3 +3,7 @@
 @tailwind utilities;
 
 
+
+.dropdown:hover .dropdownContent{
+  display: block;
+}
