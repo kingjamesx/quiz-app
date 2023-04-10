@@ -20,7 +20,7 @@ const Hero = () => {
         <Image
           src={illustration}
           alt="illustration"
-          className="max-w-[35rem] ml-auto w-full mb-12 md:hidden"
+          className="max-w-[35rem] ml-auto w-full mb-8 md:hidden"
         />
         <p className="text-sm mb-6 px-4 max-w-[30rem] w-full mr-auto md:w-[20rem] md:px-0 md:max-w-none xl:w-full xl:text-lg">
           Being a beginner and not knowing where you’ll fit can be confusing.{' '}
