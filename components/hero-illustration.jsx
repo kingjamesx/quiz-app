@@ -21,7 +21,7 @@ const HeroIllustration = props => {
       <HeroFloats
         p="100k+"
         span="Total assessments"
-        className="-top-[1rem] left-[2rem] shadow-float gap-4 py-2.5 md:top-0 md:-left-[1.5rem]"
+        className="-top-[1rem] left-[2rem] shadow-float gap-4 py-2.5 md:top-0 md:-left-[1rem]"
       />
       <HeroFloats
         p="85%"
