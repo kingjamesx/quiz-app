@@ -22,7 +22,7 @@ const Hero = () => {
           alt="illustration"
           className="max-w-[35rem] ml-auto w-full mb-12 md:hidden"
         />
-        <p className="text-sm mb-6 px-4 max-w-[30rem] w-max mr-auto md:w-[20rem] md:px-0 md:max-w-none xl:w-full xl:text-lg">
+        <p className="text-sm mb-6 px-4 max-w-[30rem] w-full mr-auto md:w-[20rem] md:px-0 md:max-w-none xl:w-full xl:text-lg">
           Being a beginner and not knowing where you’ll fit can be confusing.{' '}
           <span className="block mt-5">
             So take this 5 minute quiz to figure out your ideal role in the ever
@@ -39,7 +39,7 @@ const Hero = () => {
           </Link>
           <Link
             href="/"
-            className="text-primary-2/400 border border-primary-2/400 text-center rounded-[20px] w-full md:py-2.5 xl:py-auto"
+            className="text-primary-2/400 border border-primary-2/400 text-center rounded-[20px] w-full py-2.5 xl:py-auto"
           >
             Learn more
           </Link>
