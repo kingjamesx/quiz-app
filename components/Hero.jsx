@@ -107,14 +107,14 @@ const Hero = () => {
           >
             <Link
               href="/assessments"
-              className="bg-primary-2/400 text-white flex justify-center py-1.5 rounded-[20px] items-center gap-1 w-full md:py-3 md:gap-2.5"
+              className="bg-primary-2/400 hover:bg-primary-2/500 text-white flex justify-center py-1.5 rounded-[20px] items-center gap-1 w-full md:py-3 md:gap-2.5"
             >
               <p>Take the test</p>
               <Image src={arrow} alt="arrow" />
             </Link>
             <Link
               href="/"
-              className="text-primary-2/400 border border-primary-2/400 text-center rounded-[20px] w-full py-2.5 xl:py-auto"
+              className="text-primary-2/400 border hover:bg-Primary-2/50 border-primary-2/400 text-center rounded-[20px] w-full py-2.5 xl:py-auto"
             >
               Learn more
             </Link>

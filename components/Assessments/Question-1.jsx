@@ -14,18 +14,22 @@ const QuestionOne = props => {
           <RadioInput
             label="I’ve built a simple/ small project"
             className="py-5 md:py-10"
+            option="one"
           />
           <RadioInput
             label="I have basic some technical skills"
             className="py-5 md:py-10"
+            option="two"
           />
           <RadioInput
             label="I just know their names"
             className="py-5 md:py-10"
+            option="three"
           />
           <RadioInput
             label="I have no idea"
             className="flex justify-center items-center h-full"
+            option="four"
           />
         </div>
       </form>

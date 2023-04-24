@@ -15,7 +15,7 @@ const Assessments = () => {
         </p>
         <Link
           href="assessments/questions"
-          className="bg-primary-2/400 text-white px-7 py-3 rounded-[20px]"
+          className="bg-primary-2/400 hover:bg-primary-2/500 text-white px-7 py-3 rounded-[20px]"
         >
           Start your assessment
         </Link>

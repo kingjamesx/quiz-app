@@ -23,7 +23,8 @@ module.exports = {
         'accent-2': '#048481',
         'primary-2/400': '#F58025',
         'Primary-2/50': '#FCD5B6',
-        'primary-2/0': '#FEF9F4'
+        'primary-2/0': '#FEF9F4',
+        'primary-2/500': '#CC6B1F',
       },
     },
   },
