@@ -106,7 +106,7 @@ const Hero = () => {
             className="flex gap-2.5 text-sm px-5 max-w-[30rem] mr-auto w-full md:max-w-none md:px-0 md:gap-5 md:flex-col md:w-auto xl:flex-row xl:text-lg"
           >
             <Link
-              href="/"
+              href="/assessments"
               className="bg-primary-2/400 text-white flex justify-center py-1.5 rounded-[20px] items-center gap-1 w-full md:py-3 md:gap-2.5"
             >
               <p>Take the test</p>
