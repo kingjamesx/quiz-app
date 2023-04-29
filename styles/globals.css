@@ -10,6 +10,12 @@
   }
 }
 
+.qualities {
+  @apply text-right px-4 py-3 w-fit border border-[#E8E6E6] rounded-tr-full rounded-br-full font-[700] text-sm text-[#048481];
+}
+.qualities_right {
+  @apply text-right px-4 py-3 w-fit border border-[#E8E6E6] rounded-tl-full rounded-bl-full font-[700] text-sm text-[#048481];
+}
 .dropdown:hover .dropdownContent {
   display: block;
 }
