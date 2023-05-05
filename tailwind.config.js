@@ -15,6 +15,8 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'land-pattern': "url('/images/land-pattern.png')",
+        'footer-pattern':"url('/images/footer-pattern.png')"
+
       },
       boxShadow: {
         float: '0px 4px 4px rgba(0, 0, 0, 0.25)',

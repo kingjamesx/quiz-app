@@ -64,7 +64,7 @@ const btnVariant = {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col mt-16 justify-between pb-20 overflow-hidden md:max-w-[60rem] md:ml-auto md:w-full md:pl-10 md:flex-row xl:pl-20 xl:max-w-none">
+    <div className="flex flex-col mt-16 justify-between pb-20 overflow-hidden md:max-w-[60rem] md:ml-auto md:w-full md:pl-10 md:flex-row xl:pl-20 xl:max-w-none ">
       <div className="overflow-hidden md:min-w-[20rem] xl:w-[38rem]">
         <motion.h1
           variants={h1Variant}

@@ -9,8 +9,8 @@ import Menu from "../public/icons/menu.svg";
 import Image from "next/image";
 const Dropdown = () => {
   return (
-    <section className="bg-white rounded-[20px] px-[24px] py-[40px] flex flex-col gap-4 shadow-lg">
-      <div className="flex gap-[16px] items-center hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
+    <section className="bg-white rounded-[20px] px-[24px] py-[40px] flex flex-col gap-4 shadow-lg  ">
+      <div className="flex gap-[16px] items-center hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded ">
         <span className="w-[44px]  flex justify-center">
           <Image
             src={Articles}
