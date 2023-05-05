@@ -1,9 +1,20 @@
 import { useRouter } from 'next/router';
 import Buttons from './UI/Button';
 import RadioInput from './radio-input';
+import { useState } from 'react';
 const QuestionOne = props => {
   const { page, setPage } = props;
+  const [selected, setSelected] = useState(null);
   const router = useRouter();
+
+  const handleChange = id => {
+    if (selected === id) {
+      return setSelected(selected);
+    }
+
+    setSelected(id);
+  };
+
   return (
     <>
       <h2 className="text-center text-2xl font-bold font-mont mb-10 md:mb-16 md:text-[2rem]">
@@ -14,22 +25,30 @@ const QuestionOne = props => {
           <RadioInput
             label="I’ve built a simple/ small project"
             className="py-5 md:py-10"
-            option="one"
+            option={1}
+            onChange={handleChange}
+            onSelect={selected}
           />
           <RadioInput
             label="I have basic some technical skills"
             className="py-5 md:py-10"
-            option="two"
+            option={2}
+            onChange={handleChange}
+            onSelect={selected}
           />
           <RadioInput
             label="I just know their names"
             className="py-5 md:py-10"
-            option="three"
+            option={3}
+            onChange={handleChange}
+            onSelect={selected}
           />
           <RadioInput
             label="I have no idea"
             className="flex justify-center items-center h-full"
-            option="four"
+            option={4}
+            onChange={handleChange}
+            onSelect={selected}
           />
         </div>
       </form>

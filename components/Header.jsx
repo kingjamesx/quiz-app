@@ -1,12 +1,13 @@
-import React from "react";
-import Articles from "../public/icons/articles.svg";
-import Communities from "../public/icons/communities.svg";
-import Learning from "../public/icons/learning.svg";
-import Qualities from "../public/icons/qualities.svg";
-import Skills from "../public/icons/skills.svg";
-import Menu from "../public/icons/menu.svg";
+import React from 'react';
+import Articles from '../public/icons/articles.svg';
+import Communities from '../public/icons/communities.svg';
+import Learning from '../public/icons/learning.svg';
+import Qualities from '../public/icons/qualities.svg';
+import Skills from '../public/icons/skills.svg';
+import Menu from '../public/icons/menu.svg';
 
-import Image from "next/image";
+import Image from 'next/image';
+import Link from 'next/link';
 const Dropdown = () => {
   return (
     <section className="bg-white rounded-[20px] px-[24px] py-[40px] flex flex-col gap-4 shadow-lg  ">
@@ -25,16 +26,16 @@ const Dropdown = () => {
       </div>
       <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
         <span className="w-[44px]  flex justify-center">
-          {" "}
+          {' '}
           <Image src={Communities} alt="communities" />
         </span>
         <span>
           <p>Communities</p>
           <p className="text-sm">
-            Check out the best and biggest communities in the tech industry{" "}
+            Check out the best and biggest communities in the tech industry{' '}
           </p>
         </span>
-      </div>{" "}
+      </div>{' '}
       <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
         <span className="w-[44px]  flex justify-center">
           <Image src={Qualities} alt="qualities" />
@@ -43,7 +44,7 @@ const Dropdown = () => {
           <p>Qualities</p>
           <p className="text-sm">All the qualities you need to excel in tech</p>
         </span>
-      </div>{" "}
+      </div>{' '}
       <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
         <span className="w-[44px]  flex justify-center">
           <Image src={Skills} alt="skill" />
@@ -54,7 +55,7 @@ const Dropdown = () => {
             A breakdown of the most in-demand skills an career recommendations
           </p>
         </span>
-      </div>{" "}
+      </div>{' '}
       <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
         <span className="w-[44px]  flex justify-center">
           <Image src={Learning} alt="learning" />
@@ -63,7 +64,7 @@ const Dropdown = () => {
           <p>Learning</p>
           <p className="text-sm">Read about the latest developments in tech</p>
         </span>
-      </div>{" "}
+      </div>{' '}
       <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
         <span className="w-[44px]  flex justify-center">
           <Image src={Articles} alt="articles" />
@@ -82,11 +83,13 @@ const Dropdown = () => {
 const Header = () => {
   return (
     <nav className="px-20 flex justify-between pt-[40px] cursor-pointer items-center ">
-      <p className="text-2xl lg:text-[40px] font-bold ">Assesify</p>
+      <Link href="/" className="text-2xl lg:text-[40px] font-bold ">
+        Awaskill
+      </Link>
       <ul className="hidden lg:flex  items-center gap-[48px] text-[20px]">
         <li>About</li>
         <span className="dropdown">
-          <li>Resources</li>{" "}
+          <li>Resources</li>{' '}
           <span className="hidden dropdownContent absolute">
             <Dropdown />
           </span>

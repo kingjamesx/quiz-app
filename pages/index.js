@@ -4,17 +4,16 @@ import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import Qualities from '@/components/Qualities';
 import Footer from '@/components/Footer';
+import HeaderHero from '@/components/Header-Hero';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
-  // bg-land-pattern bg-left-top bg-no-repeat bg-contain
   return (
-    <main className=" flex flex-col justify-between">
+    <main className="flex flex-col justify-between">
       <section className="mx-auto w-full">
-        <Header />
-        <Hero />
+        <HeaderHero />
         <Qualities />
-        <Footer/>
+        <Footer />
       </section>
     </main>
   );
