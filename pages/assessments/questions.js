@@ -5,6 +5,10 @@ import { useState } from 'react';
 
 const Questions = () => {
   const [page, setPage] = useState(1);
+  // const [formData, setFormData] = useState({
+  //   questionOne: null,
+  //   questionTwo: '',
+  // });
 
   const progress = (page / 16) * 100;
 
@@ -18,7 +22,7 @@ const Questions = () => {
   };
 
   return (
-    <section className="max-w-[30rem] mx-auto md:max-w-none">
+    <section className=" mx-auto md:max-w-none">
       <Header />
       <div className="w-[87%] mt-20 mx-auto">
         <div className="h-2 rounded-xl bg-Primary-2/50 mb-2">

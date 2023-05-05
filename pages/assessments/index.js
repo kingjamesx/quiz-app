@@ -1,8 +1,8 @@
 import Header from '@/components/Header';
 import Image from 'next/image';
 import Link from 'next/link';
-import icons from '../../public/images/icons and avatars.png';
-import iconsSmall from '../../public/images/icons and avatars-mobile.png';
+import icons from '../../public/images/Icons-and-avatars.png';
+import iconsSmall from '../../public/images/Icons-and-avatars-mobile.png';
 
 const Assessments = () => {
   return (
