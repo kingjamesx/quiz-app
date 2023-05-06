@@ -10,7 +10,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 const Dropdown = () => {
   return (
-    <section className="bg-white rounded-[20px] px-[24px] py-[40px] flex flex-col gap-4 shadow-lg  ">
+    <section className="bg-white rounded-[20px] px-[24px] py-[40px] flex flex-col gap-4 shadow-lg">
       <div className="flex gap-[16px] items-center hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded ">
         <span className="w-[44px]  flex justify-center">
           <Image
@@ -82,7 +82,7 @@ const Dropdown = () => {
 
 const Header = () => {
   return (
-    <nav className="px-20 flex justify-between pt-[40px] cursor-pointer items-center ">
+    <nav className="px-20 flex justify-between pt-[40px] cursor-pointer items-center relative z-[100]">
       <Link href="/" className="text-2xl lg:text-[40px] font-bold ">
         Awaskill
       </Link>
