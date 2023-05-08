@@ -1,5 +1,6 @@
 import QuestionOne from '@/components/Assessments/Question-1';
 import QuestionTwo from '@/components/Assessments/Question-2';
+import QuestionThree from '@/components/Assessments/Question-3';
 import Buttons from '@/components/Assessments/UI/Button';
 import Header from '@/components/Header';
 import { useRouter } from 'next/router';
@@ -28,6 +29,7 @@ const Questions = () => {
       <>
         {page === 1 && <QuestionOne />}
         {page === 2 && <QuestionTwo />}
+        {page === 3 && <QuestionThree />}
       </>
     );
   };

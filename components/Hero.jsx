@@ -70,7 +70,7 @@ const Hero = () => {
           variants={h1Variant}
           initial="hidden"
           animate="visible"
-          className="font-bold text-[2rem] font-mont mb-6 relative pl-5 w-[20rem] md:pl-0 md:min-w-[20rem] xl:w-full xl:text-6xl"
+          className="font-bold text-[2rem] mb-6 relative pl-5 w-[20rem] md:pl-0 md:min-w-[20rem] xl:w-full xl:text-6xl"
         >
           <span className="text-accent-2">Unlock</span> your tech career
           potential

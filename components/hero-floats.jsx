@@ -25,7 +25,7 @@ const HeroFloats = props => {
       animate="visible"
       className={classes}
     >
-      <p className="font-extrabold text-2xl text-accent-2 font-mont md:font-bold md:text-[2rem]">
+      <p className="font-extrabold text-2xl text-accent-2 md:font-bold md:text-[2rem]">
         {p}
       </p>
       <span className="text-xs md:text-base">{span}</span>
