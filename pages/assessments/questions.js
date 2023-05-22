@@ -1,20 +1,19 @@
-import QuestionOne from '@/components/Assessments/Question-1';
-import QuestionTwo from '@/components/Assessments/Question-2';
-import QuestionThree from '@/components/Assessments/Question-3';
 import Buttons from '@/components/Assessments/UI/Button';
 import Header from '@/components/Header';
 import { useRouter } from 'next/router';
 import { useState } from 'react';
+import { QUESTIONS } from '@/components/helpers/question-bank';
+import QuestionPages from '@/components/Assessments/pages/question-pages';
 
 const Questions = () => {
   const [page, setPage] = useState(1);
-  const router = useRouter();
-  // const [formData, setFormData] = useState({
-  //   questionOne: null,
-  //   questionTwo: '',
-  // });
+  const [questionOne, setQuestionOne] = useState();
+  const [questionTwo, setQuestionTwo] = useState([]);
+  const [questionThree, setQuestionThree] = useState();
+  const [questionFour, setQuestionFour] = useState();
 
-  const progress = (page / 16) * 100;
+  const router = useRouter();
+  const progress = (page / QUESTIONS.length) * 100;
 
   const goBack = () => {
     if (page > 1) {
@@ -24,15 +23,25 @@ const Questions = () => {
     }
   };
 
-  const QuestionPages = () => {
-    return (
-      <>
-        {page === 1 && <QuestionOne />}
-        {page === 2 && <QuestionTwo />}
-        {page === 3 && <QuestionThree />}
-      </>
-    );
+  const switchPage = () => {
+    setPage(page + 1);
   };
+
+  // const QuestionPages = () => {
+  //   return (
+  //     <>
+  //       {page === 1 && (
+  //         <QuestionOne QUESTIONS={QUESTIONS[page - 1]} page={page} />
+  //       )}
+  //       {page === 2 && (
+  //         <QuestionTwo QUESTIONS={QUESTIONS[page - 1]} page={page} />
+  //       )}
+  //       {page === 3 && (
+  //         <QuestionThree QUESTIONS={QUESTIONS[page - 1]} page={page} />
+  //       )}
+  //     </>
+  //   );
+  // };
 
   return (
     <section className="mx-auto md:max-w-none">
@@ -45,25 +54,32 @@ const Questions = () => {
           ></div>
         </div>
         <div className="flex gap-5 items-end flex-col text-lg font-bold mb-5 md:gap-10">
-          <span>{page}/16</span>
-          <button
-            className="text-primary-2/400"
-            onClick={() => setPage(page + 1)}
-          >
+          <span>
+            {page}/{QUESTIONS.length}
+          </span>
+          <button className="text-primary-2/400" onClick={switchPage}>
             Skip
           </button>
         </div>
-        <form action="">
-          <QuestionPages />
-          <div className="flex justify-between mt-32 mb-16 mx-auto max-w-[27rem] xl:max-w-none">
-            <Buttons type="button" label="Back" onClick={goBack} />
-            <Buttons
-              type="button"
-              label="Next"
-              onClick={() => setPage(page + 1)}
-            />
-          </div>
-        </form>
+        {/* <form action=""> */}
+        {/* <QuestionPages /> */}
+        <QuestionPages
+          QUESTIONS={QUESTIONS}
+          page={page}
+          questionOne={questionOne}
+          setQuestionOne={setQuestionOne}
+          questionTwo={questionTwo}
+          setQuestionTwo={setQuestionTwo}
+          questionThree={questionThree}
+          setQuestionThree={setQuestionThree}
+          questionFour={questionFour}
+          setQuestionFour={setQuestionFour}
+        />
+        <div className="flex justify-between mt-32 mb-16 mx-auto max-w-[27rem] xl:max-w-none">
+          <Buttons type="button" label="Back" onClick={goBack} />
+          <Buttons type="button" label="Next" onClick={switchPage} />
+        </div>
+        {/* </form> */}
       </div>
     </section>
   );
