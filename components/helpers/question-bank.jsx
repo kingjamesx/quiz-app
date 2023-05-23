@@ -41,8 +41,6 @@ export const QUESTIONS = [
   {
     id: 4,
     prompts: 'How passionate are you about technology?',
-    // from: 'Completely',
-    // to: 'Hardly',
   },
   {
     id: 5,

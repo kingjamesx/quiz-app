@@ -1,41 +1,11 @@
 const OptionButton = props => {
-  const { children, className, key, onClick, id, question } = props;
+  const { children, className, onClick, id, question } = props;
 
-  // console.log(typeof question);
-
-  let classes =
+  const classes =
     `${
       id === question ? 'bg-primary-2/500' : 'bg-primary-2/0'
     } flex justify-center items-center rounded-r-[1.25rem] rounded-bl-[1.25rem] ` +
     className;
-
-  // if (typeof question === 'string') {
-  //   classes =
-  //     `${
-  //       id === question ? 'bg-primary-2/500' : 'bg-primary-2/0'
-  //     } flex justify-center items-center rounded-r-[1.25rem] rounded-bl-[1.25rem] ` +
-  //     className;
-  //   return classes;
-  // }
-  // if (typeof question === 'array') {
-    // classes =
-    //   `${
-    //     question.include(id) ? 'bg-primary-2/500' : 'bg-primary-2/0'
-    //   } flex justify-center items-center rounded-r-[1.25rem] rounded-bl-[1.25rem] ` +
-    //   className;
-  //   return classes;
-  // }
-
-  // const classes =
-  //   `${
-  //     typeof question === 'string' && id === question
-  //       ? 'bg-primary-2/500'
-  //       : 'bg-primary-2/0' ||
-  //         (typeof question === 'array' && question.include(id))
-  //       ? 'bg-primary-2/500'
-  //       : 'bg-primary-2/0'
-  //   } flex justify-center items-center rounded-r-[1.25rem] rounded-bl-[1.25rem] ` +
-  //   className;
 
   return (
     <button className={classes} onClick={onClick}>

@@ -15,7 +15,7 @@ const QuestionThree = props => {
           {QUESTIONS.options.map(option => (
             <div key={option.id}>
               <OptionButton
-                className="h-[6.25rem] xl:h-[12.5rem]"
+                className="h-[6.25rem] w-full xl:h-[12.5rem]"
                 onClick={() => {
                   handleClick(option.id);
                 }}

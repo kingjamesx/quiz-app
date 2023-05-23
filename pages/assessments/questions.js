@@ -24,36 +24,20 @@ const Questions = () => {
   };
 
   const switchPage = () => {
-    setPage(page + 1);
+    if (page !== QUESTIONS.length) setPage(page + 1);
   };
 
-  // const QuestionPages = () => {
-  //   return (
-  //     <>
-  //       {page === 1 && (
-  //         <QuestionOne QUESTIONS={QUESTIONS[page - 1]} page={page} />
-  //       )}
-  //       {page === 2 && (
-  //         <QuestionTwo QUESTIONS={QUESTIONS[page - 1]} page={page} />
-  //       )}
-  //       {page === 3 && (
-  //         <QuestionThree QUESTIONS={QUESTIONS[page - 1]} page={page} />
-  //       )}
-  //     </>
-  //   );
-  // };
-
   return (
-    <section className="mx-auto md:max-w-none">
+    <section className="mx-auto md:max-w-[1440px]">
       <Header />
-      <div className="w-[87%] mt-20 mx-auto">
-        <div className="h-2 rounded-xl bg-Primary-2/50 mb-2">
+      <div className="mx-auto mt-20 w-[87%]">
+        <div className="mb-2 h-2 rounded-xl bg-Primary-2/50">
           <div
             style={{ width: `${progress}%` }}
-            className="h-full bg-accent-2 rounded-xl transition-all"
+            className="h-full rounded-xl bg-accent-2 transition-all"
           ></div>
         </div>
-        <div className="flex gap-5 items-end flex-col text-lg font-bold mb-5 md:gap-10">
+        <div className="mb-5 flex flex-col items-end gap-5 text-lg font-bold md:gap-10">
           <span>
             {page}/{QUESTIONS.length}
           </span>
@@ -61,8 +45,6 @@ const Questions = () => {
             Skip
           </button>
         </div>
-        {/* <form action=""> */}
-        {/* <QuestionPages /> */}
         <QuestionPages
           QUESTIONS={QUESTIONS}
           page={page}
@@ -75,11 +57,10 @@ const Questions = () => {
           questionFour={questionFour}
           setQuestionFour={setQuestionFour}
         />
-        <div className="flex justify-between mt-32 mb-16 mx-auto max-w-[27rem] xl:max-w-none">
+        <div className="mx-auto mb-16 mt-32 flex max-w-[27rem] justify-between xl:max-w-none">
           <Buttons type="button" label="Back" onClick={goBack} />
           <Buttons type="button" label="Next" onClick={switchPage} />
         </div>
-        {/* </form> */}
       </div>
     </section>
   );

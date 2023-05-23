@@ -48,8 +48,8 @@ const QuestionPages = props => {
         <QuestionFour
           QUESTIONS={QUESTIONS[page - 1]}
           page={page}
-          questionFour={questionFour}
-          setQuestionFour={setQuestionFour}
+          question={questionFour}
+          setQuestion={setQuestionFour}
         />
       )}
     </>
