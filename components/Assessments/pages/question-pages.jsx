@@ -2,6 +2,7 @@ import QuestionOne from './Question-1';
 import QuestionTwo from './Question-2';
 import QuestionThree from './Question-3';
 import QuestionFour from './Question-4';
+import QuestionFive from './Question-5';
 
 const QuestionPages = props => {
 
@@ -16,6 +17,8 @@ const QuestionPages = props => {
     setQuestionThree,
     questionFour,
     setQuestionFour,
+    questionFive,
+    setQuestionFive,
   } = props;
 
   return (
@@ -50,6 +53,14 @@ const QuestionPages = props => {
           page={page}
           question={questionFour}
           setQuestion={setQuestionFour}
+        />
+      )}
+      {page === 5 && (
+        <QuestionFive
+          QUESTIONS={QUESTIONS[page - 1]}
+          page={page}
+          question={questionFive}
+          setQuestion={setQuestionFive}
         />
       )}
     </>

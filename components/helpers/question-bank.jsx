@@ -46,10 +46,8 @@ export const QUESTIONS = [
     id: 5,
     prompts: 'What’s your process when carrying out tasks?',
     options: [
-      {
-        A: 'Take lots of breaks in between',
-        B: 'Do them one by one till I’m done',
-      },
+      { id: 'A', option: 'Take lots of breaks in between' },
+      { id: 'B', option: 'Do them one by one till I’m done' },
     ],
   },
 ];

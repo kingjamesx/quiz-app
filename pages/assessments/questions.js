@@ -11,6 +11,11 @@ const Questions = () => {
   const [questionTwo, setQuestionTwo] = useState([]);
   const [questionThree, setQuestionThree] = useState();
   const [questionFour, setQuestionFour] = useState();
+  const [questionFive, setQuestionFive] = useState();
+
+  let label = 'Next';
+
+  if (page === QUESTIONS.length) label = 'Submit';
 
   const router = useRouter();
   const progress = (page / QUESTIONS.length) * 100;
@@ -23,12 +28,21 @@ const Questions = () => {
     }
   };
 
+  const answers = [
+    questionOne,
+    questionTwo,
+    questionThree,
+    questionFour,
+    questionFive,
+  ];
+
   const switchPage = () => {
     if (page !== QUESTIONS.length) setPage(page + 1);
+    if (page === QUESTIONS.length) console.log(answers);
   };
 
   return (
-    <section className="mx-auto md:max-w-[1440px]">
+    <section className="mx-auto min-h-screen md:max-w-[1440px]">
       <Header />
       <div className="mx-auto mt-20 w-[87%]">
         <div className="mb-2 h-2 rounded-xl bg-Primary-2/50">
@@ -56,10 +70,12 @@ const Questions = () => {
           setQuestionThree={setQuestionThree}
           questionFour={questionFour}
           setQuestionFour={setQuestionFour}
+          questionFive={questionFive}
+          setQuestionFive={setQuestionFive}
         />
         <div className="mx-auto mb-16 mt-32 flex max-w-[27rem] justify-between xl:max-w-none">
           <Buttons type="button" label="Back" onClick={goBack} />
-          <Buttons type="button" label="Next" onClick={switchPage} />
+          <Buttons type="button" label={label} onClick={switchPage} />
         </div>
       </div>
     </section>

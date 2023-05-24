@@ -15,7 +15,7 @@ const QuestionFour = props => {
       <QuestionHeaders>{QUESTIONS.prompts}</QuestionHeaders>
       <div className="mx-auto flex w-max flex-col items-center md:flex-row md:gap-5 xl:gap-12">
         <p className="hidden text-xl font-bold md:block">Completely</p>
-        <div className="mb-5 flex items-center gap-1 md:mb-0 md:gap-5 xl:gap-12">
+        <div className="mb-5 flex items-center gap-5 md:mb-0 md:gap-5 xl:gap-12">
           <button
             onClick={() => {
               setQuestion('Positive-3');
