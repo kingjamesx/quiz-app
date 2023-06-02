@@ -1,18 +1,18 @@
 import React from 'react';
-import Articles from '../public/icons/articles.svg';
-import Communities from '../public/icons/communities.svg';
-import Learning from '../public/icons/learning.svg';
-import Qualities from '../public/icons/qualities.svg';
-import Skills from '../public/icons/skills.svg';
-import Menu from '../public/icons/menu.svg';
+import Articles from '../../public/icons/articles.svg';
+import Communities from '../../public/icons/communities.svg';
+import Learning from '../../public/icons/learning.svg';
+import Qualities from '../../public/icons/qualities.svg';
+import Skills from '../../public/icons/skills.svg';
+import Menu from '../../public/icons/menu.svg';
 
 import Image from 'next/image';
 import Link from 'next/link';
 const Dropdown = () => {
   return (
-    <section className="bg-white rounded-[20px] px-[24px] py-[40px] flex flex-col gap-4 shadow-lg">
-      <div className="flex gap-[16px] items-center hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded ">
-        <span className="w-[44px]  flex justify-center">
+    <section className="flex flex-col gap-4 rounded-[20px] bg-white px-[24px] py-[40px] shadow-lg">
+      <div className="flex items-center gap-[16px] rounded p-2 hover:scale-[1.05] hover:bg-[#fef9f4] ">
+        <span className="flex  w-[44px] justify-center">
           <Image
             src={Articles}
             alt="articles"
@@ -24,8 +24,8 @@ const Dropdown = () => {
           <p className="text-sm">Read about the latest developments in tech</p>
         </span>
       </div>
-      <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
-        <span className="w-[44px]  flex justify-center">
+      <div className="flex gap-[16px] rounded p-2 hover:scale-[1.05] hover:bg-[#fef9f4]">
+        <span className="flex  w-[44px] justify-center">
           {' '}
           <Image src={Communities} alt="communities" />
         </span>
@@ -36,8 +36,8 @@ const Dropdown = () => {
           </p>
         </span>
       </div>{' '}
-      <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
-        <span className="w-[44px]  flex justify-center">
+      <div className="flex gap-[16px] rounded p-2 hover:scale-[1.05] hover:bg-[#fef9f4]">
+        <span className="flex  w-[44px] justify-center">
           <Image src={Qualities} alt="qualities" />
         </span>
         <span>
@@ -45,8 +45,8 @@ const Dropdown = () => {
           <p className="text-sm">All the qualities you need to excel in tech</p>
         </span>
       </div>{' '}
-      <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
-        <span className="w-[44px]  flex justify-center">
+      <div className="flex gap-[16px] rounded p-2 hover:scale-[1.05] hover:bg-[#fef9f4]">
+        <span className="flex  w-[44px] justify-center">
           <Image src={Skills} alt="skill" />
         </span>
         <span>
@@ -56,8 +56,8 @@ const Dropdown = () => {
           </p>
         </span>
       </div>{' '}
-      <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
-        <span className="w-[44px]  flex justify-center">
+      <div className="flex gap-[16px] rounded p-2 hover:scale-[1.05] hover:bg-[#fef9f4]">
+        <span className="flex  w-[44px] justify-center">
           <Image src={Learning} alt="learning" />
         </span>
         <span>
@@ -65,8 +65,8 @@ const Dropdown = () => {
           <p className="text-sm">Read about the latest developments in tech</p>
         </span>
       </div>{' '}
-      <div className="flex gap-[16px] hover:bg-[#fef9f4] hover:scale-[1.05] p-2 rounded">
-        <span className="w-[44px]  flex justify-center">
+      <div className="flex gap-[16px] rounded p-2 hover:scale-[1.05] hover:bg-[#fef9f4]">
+        <span className="flex  w-[44px] justify-center">
           <Image src={Articles} alt="articles" />
         </span>
         <span>
@@ -82,15 +82,15 @@ const Dropdown = () => {
 
 const Header = () => {
   return (
-    <nav className="px-20 flex justify-between pt-[40px] cursor-pointer items-center relative z-[100]">
-      <Link href="/" className="text-2xl lg:text-[40px] font-bold ">
+    <nav className="relative z-[100] flex cursor-pointer items-center justify-between px-20 pt-[40px]">
+      <Link href="/" className="text-2xl font-bold lg:text-[40px] ">
         Awaskill
       </Link>
-      <ul className="hidden lg:flex  items-center gap-[48px] text-[20px]">
+      <ul className="hidden items-center  gap-[48px] text-[20px] lg:flex">
         <li>About</li>
         <span className="dropdown">
           <li>Resources</li>{' '}
-          <span className="hidden dropdownContent absolute">
+          <span className="dropdownContent absolute hidden">
             <Dropdown />
           </span>
         </span>
@@ -98,7 +98,7 @@ const Header = () => {
         <li>Blog</li>
         <li>Contact us</li>
       </ul>
-      <button className="hidden lg:block text-lg bg-[#F58025] hover:bg-[#CC6B1F] px-[32px] py-[18px] rounded-[20px] font-bold">
+      <button className="hidden rounded-[20px] bg-[#F58025] px-[32px] py-[18px] text-lg font-bold hover:bg-[#CC6B1F] lg:block">
         Get Started
       </button>
       <span className=" lg:hidden ">

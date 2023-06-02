@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import arrow from '../public/icons/arrow.svg';
-import bulb from '../public/icons/bulb.svg';
-import HeroIllustration from './hero-illustration';
-import illustration from '../public/images/Illustration.png';
+import arrow from '../../../public/icons/arrow.svg';
+import bulb from '../../../public/icons/bulb.svg';
+import illustration from '../../../public/images/Illustration.png';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import HeroIllustration from './hero-illustration';
 
 const h1Variant = {
   hidden: {
@@ -64,17 +64,17 @@ const btnVariant = {
 
 const Hero = () => {
   return (
-    <div className="flex flex-col mt-16 justify-between pb-20 overflow-hidden md:max-w-[60rem] md:ml-auto md:w-full md:pl-10 md:flex-row xl:pl-20 xl:max-w-none">
+    <div className="mt-16 flex flex-col justify-between overflow-hidden pb-20 md:ml-auto md:w-full md:max-w-[60rem] md:flex-row md:pl-10 xl:max-w-none xl:pl-20">
       <div className="overflow-hidden md:min-w-[20rem] xl:w-[38rem]">
         <motion.h1
           variants={h1Variant}
           initial="hidden"
           animate="visible"
-          className="font-bold text-[2rem] mb-6 relative pl-5 w-[20rem] md:pl-0 md:min-w-[20rem] xl:w-full xl:text-6xl"
+          className="relative mb-6 w-[20rem] pl-5 text-[2rem] font-bold md:min-w-[20rem] md:pl-0 xl:w-full xl:text-6xl"
         >
           <span className="text-accent-2">Unlock</span> your tech career
           potential
-          <span className="absolute top-[3.7rem] right-[0.5rem] w-[1.5rem] md:right-[1rem] md:top-[3.3rem] md:w-[2rem] xl:top-[4.3rem] xl:right-[3.5rem] xl:w-auto">
+          <span className="absolute right-[0.5rem] top-[3.7rem] w-[1.5rem] md:right-[1rem] md:top-[3.3rem] md:w-[2rem] xl:right-[3.5rem] xl:top-[4.3rem] xl:w-auto">
             <Image src={bulb} alt="light-bulb" />
           </span>{' '}
           today
@@ -83,17 +83,17 @@ const Hero = () => {
           <Image
             src={illustration}
             alt="illustration"
-            className="max-w-[35rem] ml-auto w-full mb-8 md:hidden"
+            className="mb-8 ml-auto w-full max-w-[35rem] md:hidden"
           />
         </motion.div>
         <motion.p
           variants={pVariant}
           initial="hidden"
           animate="visible"
-          className="text-sm mb-6 px-4 max-w-[30rem] w-full mr-auto md:w-[20rem] md:px-0 md:max-w-none xl:w-full xl:text-lg"
+          className="mb-6 mr-auto w-full max-w-[30rem] px-4 text-sm md:w-[20rem] md:max-w-none md:px-0 xl:w-full xl:text-lg"
         >
           Being a beginner and not knowing where you’ll fit can be confusing.{' '}
-          <span className="block mt-5">
+          <span className="mt-5 block">
             So take this 5 minute quiz to figure out your ideal role in the ever
             evolving world of technology.{' '}
           </span>
@@ -103,18 +103,18 @@ const Hero = () => {
             variants={btnVariant}
             initial="hidden"
             animate="visible"
-            className="flex gap-2.5 text-sm px-5 max-w-[30rem] mr-auto w-full md:max-w-none md:px-0 md:gap-5 md:flex-col md:w-auto xl:flex-row xl:text-lg"
+            className="mr-auto flex w-full max-w-[30rem] gap-2.5 px-5 text-sm md:w-auto md:max-w-none md:flex-col md:gap-5 md:px-0 xl:flex-row xl:text-lg"
           >
             <Link
               href="/assessments"
-              className="bg-primary-2/400 hover:bg-primary-2/500 text-white flex justify-center py-1.5 rounded-[20px] items-center gap-1 w-full md:py-3 md:gap-2.5"
+              className="flex w-full items-center justify-center gap-1 rounded-[20px] bg-primary-2/400 py-1.5 text-white hover:bg-primary-2/500 md:gap-2.5 md:py-3"
             >
               <p>Take the test</p>
               <Image src={arrow} alt="arrow" />
             </Link>
             <Link
               href="/"
-              className="text-primary-2/400 border hover:bg-Primary-2/50 border-primary-2/400 text-center rounded-[20px] w-full py-2.5 xl:py-auto"
+              className="xl:py-auto w-full rounded-[20px] border border-primary-2/400 py-2.5 text-center text-primary-2/400 hover:bg-Primary-2/50"
             >
               Learn more
             </Link>

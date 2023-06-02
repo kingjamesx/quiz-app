@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import woman from '../public/images/woman.png';
-import background from '../public/images/Background.png';
+import woman from '../../../public/images/woman.png';
+import background from '../../../public/images/Background.png';
 import HeroFloats from './hero-floats';
 import { motion } from 'framer-motion';
 
@@ -28,28 +28,28 @@ const HeroIllustration = props => {
           src={woman}
           alt="woman"
           priority
-          className="top-[2.6rem] left-0 bg-no-repeat bg-contain z-40 relative max-w-[37rem] w-[100%] md:w-[25rem] md:top-[5.9rem] xl:top-[5.2rem] xl:w-[29rem]"
+          className="relative left-0 top-[2.6rem] z-40 w-[100%] max-w-[37rem] bg-contain bg-no-repeat md:top-[5.9rem] md:w-[25rem] xl:top-[5.2rem] xl:w-[29rem]"
         />
         <Image
           src={background}
           alt="background"
-          className="absolute top-0 right-0 z-10 max-w-[25rem] w-[71.5%] md:w-[20rem] xl:w-[22rem]"
+          className="absolute right-0 top-0 z-10 w-[71.5%] max-w-[25rem] md:w-[20rem] xl:w-[22rem]"
         />
       </motion.div>
       <HeroFloats
         p="100k+"
         span="Total assessments"
-        className="-top-[1rem] left-[2rem] shadow-float gap-4 py-2.5 md:top-0 md:-left-[1rem]"
+        className="-top-[1rem] left-[2rem] gap-4 py-2.5 shadow-float md:-left-[1rem] md:top-0"
       />
       <HeroFloats
         p="85%"
         span="Accuracy"
-        className="top-[0.5rem] right-0 gap-2.5 py-2.5 md:top-[1rem] md:right-[1rem]"
+        className="right-0 top-[0.5rem] gap-2.5 py-2.5 md:right-[1rem] md:top-[1rem]"
       />
       <HeroFloats
         p="500+"
         span="Daily tests"
-        className="-bottom-[1rem] left-[2.5rem] z-[60] gap-2.5 py-2.5 md:bottom-[0.5rem] md:left-[0.5rem] xl:left-[2.5rem] xl:-bottom-[1.2rem]"
+        className="-bottom-[1rem] left-[2.5rem] z-[60] gap-2.5 py-2.5 md:bottom-[0.5rem] md:left-[0.5rem] xl:-bottom-[1.2rem] xl:left-[2.5rem]"
       />
     </div>
   );

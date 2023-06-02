@@ -2,23 +2,15 @@ import { useState, useEffect } from 'react';
 
 function useWindowResize() {
   const [windowSize, setWindowSize] = useState(
-    window.innerWidth
-//     {
-//     width: window.innerWidth,
-//     height: window.innerHeight
-//   }
+    typeof window !== 'undefined' ? window.innerWidth : 0
   );
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     // Update windowSize state when the window is resized
     const handleResize = () => {
-      setWindowSize(
-        window.innerWidth
-    //     {
-    //     width: window.innerWidth,
-    //     height: window.innerHeight
-    //   }
-      );
+      setWindowSize(window.innerWidth);
     };
 
     // Add event listener
@@ -28,7 +20,7 @@ function useWindowResize() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
-  }, []); // Empty dependency array to only run the effect once
+  }, []);
 
   return windowSize;
 }
