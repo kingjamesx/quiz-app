@@ -10,7 +10,7 @@ const QuestionFive = props => {
   return (
     <>
       <QuestionHeaders>{QUESTIONS.prompts}</QuestionHeaders>
-      <div className="mx-auto text-center text-xl">
+      <div className="mx-auto w-full text-center text-xl">
         <div className="mx-auto grid max-w-[27rem] grid-cols-2 justify-center gap-7 md:gap-5 xl:max-w-none">
           {QUESTIONS.options.map(option => (
             <div key={option.id}>

@@ -21,7 +21,7 @@ const QuestionTwo = props => {
       <QuestionHeaders para={QUESTIONS.instruction}>
         {QUESTIONS.prompts}
       </QuestionHeaders>
-      <div className="mx-auto grid max-w-[27rem] grid-cols-1 justify-center gap-7 md:grid-cols-3 md:gap-5 xl:max-w-none xl:grid-cols-6">
+      <div className="mx-auto grid w-full max-w-[27rem] grid-cols-1 justify-center gap-7 md:grid-cols-3 md:gap-5 xl:max-w-none xl:grid-cols-6">
         {QUESTIONS.options.map(option => (
           <button
             key={option.id}

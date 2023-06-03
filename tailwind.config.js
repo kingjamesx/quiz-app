@@ -15,8 +15,7 @@ module.exports = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'land-pattern': "url('/images/land-pattern.png')",
-        'footer-pattern':"url('/images/footer-pattern.png')"
-
+        'footer-pattern': "url('/images/footer-pattern.png')",
       },
       boxShadow: {
         float: '0px 4px 4px rgba(0, 0, 0, 0.25)',
@@ -27,6 +26,9 @@ module.exports = {
         'Primary-2/50': '#FCD5B6',
         'primary-2/0': '#FEF9F4',
         'primary-2/500': '#CC6B1F',
+        primary: '#292627',
+        secondary: '#5D5658',
+        'primary-2/100': '#FABF92',
       },
     },
   },

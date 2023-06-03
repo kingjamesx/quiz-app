@@ -37,12 +37,15 @@ const QuestionLayout = () => {
 
   const switchPage = () => {
     if (page !== QUESTIONS.length) setPage(page + 1);
-    if (page === QUESTIONS.length) console.log(answers);
+    if (page === QUESTIONS.length) {
+      console.log(answers);
+      router.push('/assessments/result');
+    }
   };
 
   return (
     <>
-      <div className="mx-auto mt-20 w-[87%]">
+      <div className="mx-auto mt-20 flex min-h-screen w-[87%] flex-col justify-between">
         <div className="mb-2 h-2 rounded-xl bg-Primary-2/50">
           <div
             style={{ width: `${progress}%` }}
@@ -71,7 +74,7 @@ const QuestionLayout = () => {
           questionFive={questionFive}
           setQuestionFive={setQuestionFive}
         />
-        <div className="mx-auto mb-16 mt-32 flex max-w-[27rem] justify-between xl:max-w-none">
+        <div className="mx-auto mb-16 mt-32 flex w-full max-w-[27rem] justify-between xl:max-w-none">
           <Buttons type="button" label="Back" onClick={goBack} />
           <Buttons type="button" label={label} onClick={switchPage} />
         </div>
