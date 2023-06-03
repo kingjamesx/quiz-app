@@ -1,17 +1,5 @@
 import { motion } from 'framer-motion';
-
-const floatsVariant = {
-  hidden: {
-    scale: 0,
-  },
-  visible: {
-    scale: 1,
-    transition: {
-      duration: 1,
-      delay: 1,
-    },
-  },
-};
+import { floatsVariant } from './animation';
 
 const HeroFloats = props => {
   const { p, span, className } = props;
@@ -25,7 +13,7 @@ const HeroFloats = props => {
       animate="visible"
       className={classes}
     >
-      <p className="font-extrabold text-2xl text-accent-2 md:font-bold md:text-[2rem]">
+      <p className="text-2xl font-extrabold text-accent-2 md:text-[2rem] md:font-bold">
         {p}
       </p>
       <span className="text-xs md:text-base">{span}</span>

@@ -3,27 +3,16 @@ import woman from '../../../public/images/woman.png';
 import background from '../../../public/images/Background.png';
 import HeroFloats from './hero-floats';
 import { motion } from 'framer-motion';
+import { animationX } from './animation';
 
-const illustVariant = {
-  hidden: {
-    opacity: 0,
-    x: '100vw',
-  },
-  visible: {
-    opacity: 1,
-    x: 0,
-    transition: {
-      duration: 1,
-    },
-  },
-};
+const floatInRight = animationX('100vw', 1);
 
 const HeroIllustration = props => {
   const { className } = props;
   const classes = 'relative ' + className;
   return (
     <div className={classes}>
-      <motion.div variants={illustVariant} initial="hidden" animate="visible">
+      <motion.div variants={floatInRight} initial="hidden" animate="visible">
         <Image
           src={woman}
           alt="woman"

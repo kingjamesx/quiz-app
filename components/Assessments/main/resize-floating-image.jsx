@@ -12,7 +12,7 @@ const ResizeFloatingImage = () => {
       <Image
         src={icons}
         alt="icons"
-        className="absolute left-[50%] top-[50%] -z-10 -translate-x-[40%] md:w-[45rem] md:-translate-x-[50%] md:-translate-y-[20%] xl:w-auto xl:-translate-x-[50%] xl:-translate-y-[10%]"
+        className="absolute left-[50%] top-[50%] -z-10 -translate-x-[50%] md:w-[50rem] md:-translate-x-[50%] md:-translate-y-[20%] xl:w-[62.625rem] xl:-translate-y-[10%]"
       />
     );
   };
@@ -21,7 +21,7 @@ const ResizeFloatingImage = () => {
     return (
       <Image
         src={iconsSmall}
-        alt="icons"
+        alt="icons-small"
         className="absolute left-[50%] top-[50%] -z-10 -translate-y-[16%] translate-x-[-50%]"
       />
     );
