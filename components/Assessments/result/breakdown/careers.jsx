@@ -1,6 +1,6 @@
 import { CAREERS } from '@/components/helpers/result-bank';
 
-const Recommendations = () => {
+const Careers = () => {
   return (
     <div>
       <h4 className="mb-3 text-2xl font-bold leading-9 text-primary">
@@ -32,4 +32,4 @@ const Recommendations = () => {
   );
 };
 
-export default Recommendations;
+export default Careers;

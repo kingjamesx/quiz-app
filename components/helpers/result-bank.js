@@ -1,3 +1,26 @@
+import youtube from '../../public/images/youtube.png';
+import zuri from '../../public/images/zuri.png';
+import hng from '../../public/images/hng.png';
+import coursera from '../../public/images/coursera.png';
+import web3 from '../../public/images/web3.png';
+import freecode from '../../public/images/freecode.png';
+import altschool from '../../public/images/altschool.png';
+import google from '../../public/images/google.png';
+import devcareer from '../../public/images/devcareer.png';
+import I4G from '../../public/images/14G.png';
+import hertechtrail from '../../public/images/hertechtrail.png';
+import enyata from '../../public/images/enyata.png';
+import friends from '../../public/images/friends.png';
+import shecode from '../../public/images/shecodes.png';
+import ADP from '../../public/images/ADP.png';
+import blackgirls from '../../public/images/blackgirls.png';
+import code from '../../public/images/code.png';
+import DEV from '../../public/images/DEV.png';
+import hackerrank from '../../public/images/hackerrank.png';
+import web3Des from '../../public/images/web3-des.png';
+import braintrust from '../../public/images/braintrust.png';
+import SQL from '../../public/images/SQL.png';
+
 export const CAREERS = [
   {
     id: 1,
@@ -64,4 +87,32 @@ export const OTHER_CAREERS = [
     description:
       'Often driven by curiosity to get answers to problems, analytical thinkers never assume anything, but question anything. They are data-driven, have a logical and systematic nature and like routines.',
   },
+];
+
+export const LEARNING_PLATFORMS = [
+  { id: 1, logo: youtube, name: 'Youtube' },
+  { id: 2, logo: zuri, name: 'Zuri Training' },
+  { id: 3, logo: hng, name: 'HNG Internship' },
+  { id: 4, logo: coursera, name: 'Coursera' },
+  { id: 5, logo: web3, name: 'Web3 Schools' },
+  { id: 6, logo: freecode, name: 'Free Code Camp' },
+  { id: 7, logo: altschool, name: 'Alt School' },
+  { id: 8, logo: google, name: 'Google Learn' },
+];
+
+export const COMMUNITY = [
+  { id: 1, logo: devcareer, name: 'DevCareer' },
+  { id: 2, logo: I4G, name: '14G Community' },
+  { id: 3, logo: hertechtrail, name: 'Her Tech Trail' },
+  { id: 4, logo: enyata, name: 'Enyata community' },
+  { id: 5, logo: friends, name: 'Friends of Figma community' },
+  { id: 6, logo: shecode, name: 'She Code Africa' },
+  { id: 7, logo: ADP, name: 'ADP list' },
+  { id: 8, logo: blackgirls, name: 'Black Girls in Tech' },
+  { id: 9, logo: code, name: 'Code Inn' },
+  { id: 10, logo: DEV, name: 'DEV' },
+  { id: 11, logo: hackerrank, name: 'Hackerrank' },
+  { id: 12, logo: web3Des, name: 'Web3 Designers Hub' },
+  { id: 13, logo: braintrust, name: 'Braintrust' },
+  { id: 14, logo: SQL, name: 'SQL Tribe' },
 ];

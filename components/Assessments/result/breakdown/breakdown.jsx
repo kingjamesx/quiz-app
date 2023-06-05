@@ -1,9 +1,10 @@
-import Recommendations from './careers';
+import Careers from './careers';
 import Others from './other-careers';
+import Wand from '../../svg/wand';
 
 const Breakdown = () => {
   return (
-    <section className="mb-20 ml-12 leading-6">
+    <section className="relative mb-20 ml-12 leading-6">
       <h2 className="mb-7 text-[2.5rem] font-bold leading-[3.5rem] text-primary">
         Breakdown
       </h2>
@@ -19,9 +20,12 @@ const Breakdown = () => {
         experiences and are inquisitive.
       </p>
       <div className="flex gap-5">
-        <Recommendations />
+        <Careers />
         <Others />
       </div>
+      <span className="absolute bottom-60 right-56">
+        <Wand />
+      </span>
     </section>
   );
 };
