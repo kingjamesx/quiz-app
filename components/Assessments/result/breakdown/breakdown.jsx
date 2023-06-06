@@ -19,7 +19,7 @@ const Breakdown = () => {
         from different viewpoints and angles. You enjoy creating and sharing
         experiences and are inquisitive.
       </p>
-      <div className="flex flex-wrap md:mx-12 md:gap-10 xl:mx-auto xl:flex-nowrap xl:gap-5">
+      <div className="flex flex-wrap gap-10 md:mx-12 xl:mx-auto xl:flex-nowrap xl:gap-5">
         <Careers />
         <Others />
       </div>
