@@ -16,6 +16,7 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'land-pattern': "url('/images/land-pattern.png')",
         'recommendations-pattern': "url('/images/recommendations-pattern.png')",
+        'total-results-pattern': "url('/images/total-results-pattern.png')",
         'footer-pattern': "url('/images/footer-pattern.png')",
       },
       boxShadow: {
@@ -32,6 +33,9 @@ module.exports = {
         'primary-2/100': '#FABF92',
         'primary-2/900': '#311A07',
         platform: '#E8E6E6',
+        rectangle: '#72E037',
+        'primary-2/300': '#F79549',
+        cta: '#58ADAB',
       },
     },
   },

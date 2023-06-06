@@ -18,8 +18,10 @@ const community = {
 
 const Recommendations = () => {
   return (
-    <section className="bg-recommendations-pattern bg-no-repeat pl-12 pt-20">
-      <h2 className="mb-5 text-[2.5rem] font-bold">Recommendations</h2>
+    <section className="bg-recommendations-pattern bg-no-repeat pl-6 md:pl-12 md:pt-20">
+      <h2 className="mb-5 text-2xl font-bold md:text-[2.5rem]">
+        Recommendations
+      </h2>
       <Platforms
         heading={learningPlatforms.heading}
         description={learningPlatforms.description}
