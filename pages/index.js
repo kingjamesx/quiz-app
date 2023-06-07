@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Head>
         <title>Awaskill</title>
-        <meta property="og:image" content={'/images/home-page.png'} />
+        {/* <meta property="og:image" content={'/images/home-page.png'} /> */}
 
         {/* <meta property="og:image" content="/images/home-page.png" /> */}
         <meta

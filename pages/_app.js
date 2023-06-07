@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
   return (
     <OverallLayout>
       <Head>
-        <meta property="og:image" content={ogImage} />
+        <meta property="og:image" content="https://ibb.co/KwwMt8X" />
         <link rel="icon" href="/images/logo-icon.png" />
       </Head>
       <Component {...pageProps} />
