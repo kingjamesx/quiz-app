@@ -19,7 +19,7 @@ const Others = () => {
           </p>
           <Link
             href="/"
-            className="flex items-center gap-2.5 font-bold text-primary-2/400"
+            className="flex items-center gap-2.5 font-bold text-primary-2/400 hover:underline"
           >
             <span>Learn more</span>{' '}
             <span>

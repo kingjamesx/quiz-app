@@ -1,19 +1,27 @@
 import useWindowResize from '@/components/hooks/window-resize';
+import { useState } from 'react';
 
 const PositiveTwo = props => {
   const { question } = props;
+  const [hover, setHover] = useState(false);
   const windowSize = useWindowResize();
   const md = 768;
 
   let fill = 'none';
 
+  if (hover) {
+    fill = '#CDE6E6';
+  }
+
   if (question === 'Positive-2') {
-    fill = '#CC6B1F';
+    fill = '#048481';
   }
 
   const BigSvg = () => {
     return (
       <svg
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
         width="48"
         height="48"
         viewBox="0 0 48 48"
@@ -28,6 +36,8 @@ const PositiveTwo = props => {
   const SmallSvg = () => {
     return (
       <svg
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
         width="32"
         height="32"
         viewBox="0 0 32 32"

@@ -36,7 +36,7 @@ const Platforms = props => {
         ))}
       </div>
       <div className="mx-auto w-max">
-        <button className="my-10 text-base font-bold text-primary-2/400 md:text-lg">
+        <button className="my-10 text-base font-bold text-primary-2/400 hover:underline md:text-lg">
           See all
         </button>
       </div>
