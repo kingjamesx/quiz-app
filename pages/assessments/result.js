@@ -6,10 +6,18 @@ import Retake from '@/components/Assessments/result/retake';
 import Score from '@/components/Assessments/result/score';
 import TotalResults from '@/components/Assessments/result/total-results/total-results';
 import Footer from '@/components/layout/Footer';
+import Head from 'next/head';
 
 const ResultPage = () => {
   return (
     <AssessmentLayout>
+      <Head>
+        <title>Awaskill || Result</title>
+        <meta
+          name="description"
+          content="Here's your score - We wish you a great career ahead"
+        />
+      </Head>
       <Score />
       <Breakdown />
       <Recommendations />

@@ -2,13 +2,23 @@ import Qualities from '@/components/home-page/Qualities';
 import HeaderHero from '@/components/home-page/layout/Header-Hero';
 import HomeLayout from '@/components/home-page/layout/home-layout';
 import Footer from '@/components/layout/Footer';
+import Head from 'next/head';
 
 export default function Home() {
   return (
-    <HomeLayout>
-      <HeaderHero />
-      <Qualities />
-      <Footer />
-    </HomeLayout>
+    <>
+      <Head>
+        <title>Awaskill</title>
+        <meta
+          name="description"
+          content="Unlock your tech career potential today"
+        />
+      </Head>
+      <HomeLayout>
+        <HeaderHero />
+        <Qualities />
+        <Footer />
+      </HomeLayout>
+    </>
   );
 }
