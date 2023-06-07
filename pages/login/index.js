@@ -11,7 +11,7 @@ const index = () => {
     <div className="flex ">
       <Head>
         <title>Awaskill || Login</title>
-        <meta property="og:image" content="/images/home-page.png" />
+        {/* <meta property="og:image" content="/images/home-page.png" /> */}
         <meta name="description" content="Login - Welcome" />
       </Head>
       <section className="basis-[45%] p-10">
