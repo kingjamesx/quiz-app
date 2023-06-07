@@ -7,6 +7,7 @@ const Questions = () => {
     <>
       <Head>
         <title>Awaskill || Questions</title>
+        <meta property="og:image" content="/images/home-page.png" />
         <meta name="description" content="Answer the following questions" />
       </Head>
       <AssessmentLayout>

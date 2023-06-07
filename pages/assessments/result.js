@@ -13,6 +13,7 @@ const ResultPage = () => {
     <AssessmentLayout>
       <Head>
         <title>Awaskill || Result</title>
+        <meta property="og:image" content="/images/home-page.png" />
         <meta
           name="description"
           content="Here's your score - We wish you a great career ahead"
