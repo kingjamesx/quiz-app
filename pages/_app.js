@@ -7,7 +7,10 @@ export default function App({ Component, pageProps }) {
   return (
     <OverallLayout>
       <Head>
-        <meta property="og:image" content="https://ibb.co/KwwMt8X" />
+        <meta
+          property="og:image"
+          content="https://i.ibb.co/X88hnGb/Screenshot-2023-05-30-at-21-18-05-https-awaskill-vercel-app.png"
+        />
         <link rel="icon" href="/images/logo-icon.png" />
       </Head>
       <Component {...pageProps} />
