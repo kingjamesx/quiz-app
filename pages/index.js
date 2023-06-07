@@ -4,6 +4,7 @@ import HomeLayout from '@/components/home-page/layout/home-layout';
 import Footer from '@/components/layout/Footer';
 import Head from 'next/head';
 
+
 export default function Home() {
   return (
     <>
