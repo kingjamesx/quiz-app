@@ -1,9 +1,9 @@
 import Qualities from '@/components/home-page/Qualities';
+import Resources from '@/components/home-page/Resources';
 import HeaderHero from '@/components/home-page/layout/Header-Hero';
 import HomeLayout from '@/components/home-page/layout/home-layout';
 import Footer from '@/components/layout/Footer';
 import Head from 'next/head';
-
 
 export default function Home() {
   return (
@@ -21,6 +21,7 @@ export default function Home() {
       <HomeLayout>
         <HeaderHero />
         <Qualities />
+        <Resources />
         <Footer />
       </HomeLayout>
     </>
