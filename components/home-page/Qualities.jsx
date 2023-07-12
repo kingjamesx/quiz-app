@@ -5,7 +5,7 @@ import techskillIllustration from '../../public/images/techskills-Illustration.p
 
 const Qualities = () => {
   return (
-    <section className="sm:border-t bg-techskills-pattern bg-cover px-5 xl:px-20 sm:px-10 pb-[100px] lg:mt-[100px] mt-0 pt-[20px] lg:pt-[100px] flex flex-col-reverse lg:flex-row justify-between items-center">
+    <section className="sm:border-t bg-techskills-pattern bg-cover px-5 xl:px-20 sm:px-10 pb-[100px] lg:mt-[100px] mt-0 pt-[20px] lg:pt-[100px] flex flex-col-reverse md:flex-row justify-between items-center">
       {/* left side */}
       <div className="flex">
         <div className=" flex flex-col gap-[88px] mt-[100px] items-end">
