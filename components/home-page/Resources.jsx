@@ -25,30 +25,41 @@ const resources = [
 ];
 const Resources = () => {
   return (
-    <section className="pl-5 xl:pl-[120px] py-[72px] border-t md:flex items-center gap-5 lg:gap-[60px]">
+    <section className="pl-5 xl:pl-[120px] py-[72px] border-t md:flex items-center gap-0 md:gap-[60px]">
       {/* Left side */}
       <div className="">
         <p className="text-accent-2 text-xs lg:text-base">RESOURCES</p>
-        <h4 className="font-[700] text-2xl lg:text-[40px] text-[#292627]">Insights</h4>
-        <p className="text-sm lg:text-lg leading-6 mt-4 text-[#5D5658] lg:w-[450px]">
+        <h4 className="font-[700] text-2xl lg:text-[40px] text-[#292627]">
+          Insights
+        </h4>
+        <p className="text-sm lg:text-lg leading-6 mt-3 text-[#5D5658] lg:w-[450px]">
           Unlock new insights by diving into our curated collection of articles,
           resources, and communities
         </p>
         <div className="mt-10">
-          <p className="text-[#F58025]">See all articles</p>
+          <p className="text-[#F58025] hidden md:flex justify-start">
+            See all articles
+          </p>
         </div>
       </div>
       {/* right side */}
       <div className=" flex items-center overflow-x-scroll">
         {resources.map(resource => (
           <div className="mr-4 md:mr-10 w-[294px] sm:w-[418px] h-[564px] px-3 md:px-4 pt-3 md:pt-4 pb-8 border rounded-[20px]">
-            <Image className='' style={{background: `${resource.bg}`}} src={resource.image} alt="Installing Illustration" />
+            <Image
+              className=""
+              style={{ background: `${resource.bg}` }}
+              src={resource.image}
+              alt="Installing Illustration"
+            />
             <div className="mt-4">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-max px-2 py-1 rounded-[10px] uppercase text-white bg-accent-2 font-700 text-[10px]">
                   {resource.category}
                 </div>
-                <p className="text-[10px] text-secondary">{resource.time} mins read</p>
+                <p className="text-[10px] text-secondary">
+                  {resource.time} mins read
+                </p>
               </div>
               <p className="text-base md:text-xl leading-6 font-[700] w-[270px] lg:w-[386px] mb-3">
                 {resource.title}
@@ -59,6 +70,7 @@ const Resources = () => {
             </div>
           </div>
         ))}
+
         {/* <div className="w-[418px] h-[564px] px-4 pt-4 pb-8 border rounded-[20px]">
           <Image src={IllustrationInstalling} alt="Installing Illustration" />
           <div className="mt-4">
@@ -78,6 +90,9 @@ const Resources = () => {
             </p>
           </div>
         </div> */}
+      </div>
+      <div className="mt-5">
+        <p className="text-sm text-[#F58025] flex md:hidden justify-center">See all articles</p>
       </div>
     </section>
   );
