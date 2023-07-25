@@ -25,7 +25,7 @@ const resources = [
 ];
 const Resources = () => {
   return (
-    <section className="pl-5 xl:pl-[120px] py-[72px] border-t md:flex items-center gap-0 md:gap-[60px]">
+    <section className=" pl-5 xl:pl-[120px] py-[72px] border-t md:flex items-center gap-0 md:gap-[60px]">
       {/* Left side */}
       <div className="">
         <p className="text-accent-2 text-xs lg:text-base">RESOURCES</p>
@@ -43,9 +43,9 @@ const Resources = () => {
         </div>
       </div>
       {/* right side */}
-      <div className=" flex items-center overflow-x-scroll">
+      <div className=" z-[10] flex items-center overflow-x-scroll">
         {resources.map(resource => (
-          <div className="mr-4 md:mr-10 w-[294px] sm:w-[418px] h-[564px] px-3 md:px-4 pt-3 md:pt-4 pb-8 border rounded-[20px]">
+          <div className="bg-white mr-4 md:mr-10 w-[294px] sm:w-[418px] h-[564px] px-3 md:px-4 pt-3 md:pt-4 pb-8 border rounded-[20px]">
             <Image
               className=""
               style={{ background: `${resource.bg}` }}
@@ -64,7 +64,7 @@ const Resources = () => {
               <p className="text-base md:text-xl leading-6 font-[700] w-[270px] lg:w-[386px] mb-3">
                 {resource.title}
               </p>
-              <p className="text-sm md:text-sm w-[270px] md:w-[386px] text-secondary leading-6">
+              <p className="text-sm md:text-sm w-[270px] md:w-[386px] text-secondary md:leading-6">
                 {resource.content}
               </p>
             </div>

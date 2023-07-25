@@ -17,6 +17,7 @@ module.exports = {
         'land-pattern': "url('/images/land-pattern.png')",
         'recommendations-pattern': "url('/images/recommendations-pattern.png')",
         'total-results-pattern': "url('/images/total-results-pattern.png')",
+        'testimonial-pattern': "url('/images/testimonial-pattern.png')",
         'footer-pattern': "url('/images/footer-pattern.png')",
       },
       boxShadow: {
