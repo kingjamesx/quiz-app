@@ -1,6 +1,8 @@
 import Qualities from '@/components/home-page/Qualities';
 import Resources from '@/components/home-page/Resources';
 import Testimonials from '@/components/home-page/layout/Testimonials';
+import StackUp from '@/components/home-page/layout/StackUp';
+import Subscribe from '@/components/home-page/layout/Subscribe';
 import HeaderHero from '@/components/home-page/layout/Header-Hero';
 import HomeLayout from '@/components/home-page/layout/home-layout';
 import Footer from '@/components/layout/Footer';
@@ -24,6 +26,8 @@ export default function Home() {
         <Qualities />
         <Resources />
         <Testimonials />
+        <StackUp />
+        <Subscribe />
         <Footer />
       </HomeLayout>
     </>
