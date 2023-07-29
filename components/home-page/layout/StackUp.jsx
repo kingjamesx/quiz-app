@@ -19,7 +19,7 @@ const StackUp = () => {
 
       <Link
           href="/assessments"
-          className="mb-10 flex w-max px-8 items-center justify-center gap-1 rounded-[20px] bg-primary-2/400 py-1.5 text-white hover:bg-primary-2/500 md:gap-2.5 md:py-[18px]"
+          className="mb-10 flex w-max px-8 items-center justify-center gap-1 rounded-[20px] bg-primary-2/400 py-1.5 font-bold text-white hover:bg-primary-2/500 md:gap-2.5 md:py-[18px]"
         >
           <p>Take the test</p>
           <Image src={arrow} alt="arrow" />

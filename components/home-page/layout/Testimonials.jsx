@@ -8,21 +8,21 @@ import Testimonial_data from '@/components/testimonials/data';
 
 const Testimonials = () => {
   return (
-    <section className="z-[1] mx-auto relative px-20 py-[100px]">
+    <section className="z-[1] relative px-5 sm:px-10 lg:px-20 py-[60px] md:py-[100px]">
       <Image
-        className="absolute z-[-10] mt-[-245px] mx-[-80px]"
+        className="h-[300px] md:h-auto absolute z-[-10] md:mt-[-245px] mx-[-20px] sm:mx-[-40px] lg:mx-[-80px]"
         src={testimonialPattern}
         alt="testimonial-bg"
       />
-      <div className="py-10 flex flex-col items-center justify-center">
+      <div className="py-5 md:py-10 flex flex-col items-center justify-center">
         <div className="text-center">
-          <h5 className="text-accent-2 ">TESTIMONIALS</h5>
-          <h2 className="text-primary  text-[40px] font-bold mb-10">
+          <h5 className="md:text-base text-accent-2 ">TESTIMONIALS</h5>
+          <h2 className="text-primary  text-2xl md:text-[40px] font-bold mb-5 md:mb-10">
             What others have to say
           </h2>
         </div>
 
-        <div className="flex justify-center items-center gap-4">
+        <div className="w-full flex-col flex lg:flex-row sm:justify-center sm:items-center gap-4">
           {Testimonial_data.map(testimonial => (
             <TestimonialCard img={testimonial.img} name={testimonial.name} result={testimonial.test_result} percent={testimonial.test_percent} testimonial={testimonial.testimonial} />
           ))}

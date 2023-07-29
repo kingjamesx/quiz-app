@@ -7,8 +7,7 @@ const Subscribe = () => {
       <h3 className="font-bold text-[40px] mb-1.5">Subscribe to our news letter</h3>
       <div className="flex items-center gap-2">
         <p className="w-[580px] text-lg text-secondary">
-          Stay up to date wth the latest news, announcements, and articles Enter
-          your email Subscribe
+          Stay up to date with the latest news, announcements, and articles
         </p>
         <form action="" className="flex items-center gap-2">
             <input type="text" className="w-[410px] border border-[#E8E6E6] p-4 rounded-[20px]" placeholder='Enter your email' />
