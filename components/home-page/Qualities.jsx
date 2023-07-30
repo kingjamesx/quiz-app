@@ -7,7 +7,7 @@ const Qualities = () => {
   return (
     <section className="sm:border-t bg-techskills-pattern bg-cover px-5 lg:px-10 xl:px-20 pb-[100px] lg:mt-[100px] mt-0 pt-[20px] lg:pt-[100px] flex flex-col-reverse md:flex-row justify-between items-center">
       {/* left side */}
-      {/* <div className="flex">
+      <div className="flex">
         <div className=" flex flex-col gap-[88px] mt-[100px] items-end">
           <div className="qualities">Creativity</div>
           <div className="qualities">Analytical thinking</div>
@@ -21,7 +21,7 @@ const Qualities = () => {
           <div className="qualities_right">Passion for technology</div>
           <div className="qualities_right">People skills</div>
         </div>
-      </div> */}
+      </div>
       {/* right side */}
       <div className="relative">
         <Image className='w-[200px] h-[200px] md:w-[300px] md:h-[300px] lg:h-auto lg:w-auto absolute z-[-1] right-5 md:right-[40px] top-[5px] md:top-[-80px]' src={techskillIllustration} alt='Illustration'/>
