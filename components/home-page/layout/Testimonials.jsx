@@ -10,7 +10,7 @@ const Testimonials = () => {
   return (
     <section className="z-[1] relative px-5 sm:px-10 lg:px-20 py-[60px] md:py-[100px]">
       <Image
-        className="h-[300px] md:h-auto absolute z-[-10] md:mt-[-245px] mx-[-20px] sm:mx-[-40px] lg:mx-[-80px]"
+        className="h-[300px] md:h-auto absolute z-[-10] md:mt-[-275px] mx-[-20px] sm:mx-[-40px] lg:mx-[-80px]"
         src={testimonialPattern}
         alt="testimonial-bg"
       />
