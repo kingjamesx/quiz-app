@@ -10,7 +10,7 @@ const Subscribe = () => {
           Stay up to date with the latest news, announcements, and articles
         </p>
         <form action="" className="relative flex items-center gap-2">
-            <input type="text" className="placeholder:text-xs md:placeholder:text-lg relative h-11 md:h-12 w-full md:w-[410px] border border-[#E8E6E6] py-1 px-4 md:px-4 md:py-4 rounded-[20px]" placeholder='Enter your email' />
+            <input type="text" className="placeholder:text-xs md:placeholder:text-lg relative h-11 md:h-14 w-full md:w-[410px] border border-[#E8E6E6] py-1 px-4 md:px-4 md:py-4 rounded-[20px]" placeholder='Enter your email' />
             {/* <Button name='Subscribe' /> */}
             <button className="absolute right-1 md:relative text-white bg-primary-2/400 font-bold text-xs md:text-lg py-2 md:py-[18px] px-4 md:px-8 rounded-[20px]">Subscribe</button>
         </form>

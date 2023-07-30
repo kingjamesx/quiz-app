@@ -25,6 +25,7 @@ const resources = [
 ];
 const Resources = () => {
   return (
+    <>
     <section className=" pl-5 xl:pl-[120px] py-[72px] border-t md:flex items-center gap-0 md:gap-[60px]">
       {/* Left side */}
       <div className="">
@@ -91,10 +92,11 @@ const Resources = () => {
           </div>
         </div> */}
       </div>
+    </section>
       <div className="mt-5">
         <p className="text-sm text-[#F58025] flex md:hidden justify-center">See all articles</p>
       </div>
-    </section>
+    </>
   );
 };
 
