@@ -2,6 +2,7 @@ import OverallLayout from '@/components/layout/overall-layout';
 import '@/styles/globals.css';
 import Head from 'next/head';
 import ogImage from '../public/images/home-page.png';
+import Script from 'next/script'
 
 export default function App({ Component, pageProps }) {
   return (
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" href="/images/logo-icon.png" />
       </Head>
       <Component {...pageProps} />
+      <Script src="https://cdn.jsdelivr.net/gh/UnbugQA-Team/cdn-webevaluation@main/script.js" />
     </OverallLayout>
   );
 }
